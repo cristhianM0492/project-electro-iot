@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="project-electro-iot:war">
+    <output-path>$PROJECT_DIR$/project-electro-iot/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>project-electro-iot</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="project-electro-iot-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="project-electro-iot:war exploded" />
+    </root>
+  </artifact>
+</component>
