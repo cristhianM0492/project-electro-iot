@@ -8,6 +8,6 @@ import org.springframework.data.repository.CrudRepository;
 
 
 public interface IPacienteDao extends CrudRepository<Paciente, Long> {
-
+    public Paciente findByEmail(String email);
 }
 

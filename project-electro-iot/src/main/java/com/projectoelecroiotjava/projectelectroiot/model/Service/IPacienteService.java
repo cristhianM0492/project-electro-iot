@@ -5,7 +5,7 @@ package com.projectoelecroiotjava.projectelectroiot.model.Service;
 import com.projectoelecroiotjava.projectelectroiot.model.Entidades.Paciente;
 
 import java.util.List;
-
+//@repository
 public interface IPacienteService {
     Paciente save (Paciente paciente);
 

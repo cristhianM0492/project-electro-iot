@@ -13,19 +13,19 @@ import org.springframework.stereotype.Component;
 @NoArgsConstructor
 @Entity
 @Component
-@Table(name="paciente")
+@Table(name="pacientes")
 public class Paciente {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    @Column(name="id_paciente")
+    @Column(name="id")
     private Long id;
 
-    @Getter @Setter @Column(name ="nombre")
+    @Getter @Setter @Column(name ="nombres")
     private String nombres;
 
 
-    @Getter @Setter @Column(name ="apellido")
+    @Getter @Setter @Column(name ="apellidos")
     private String apellidos;
 
 
@@ -35,7 +35,7 @@ public class Paciente {
 
     private String telefono;
 
-    @Getter @Setter @Column(name ="contrasenia")
+    @Getter @Setter @Column(name ="password")
     private String password;
 
     @Getter  @Setter

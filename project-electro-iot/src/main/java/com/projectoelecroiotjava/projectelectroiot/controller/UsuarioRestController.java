@@ -1,14 +1,11 @@
 package com.projectoelecroiotjava.projectelectroiot.controller;
 
 
-
 import com.projectoelecroiotjava.projectelectroiot.model.Entidades.Paciente;
 import com.projectoelecroiotjava.projectelectroiot.model.Service.IPacienteService;
+//import javax.persistence.Id;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-
-
 import java.util.ArrayList;
 import java.util.List;
 

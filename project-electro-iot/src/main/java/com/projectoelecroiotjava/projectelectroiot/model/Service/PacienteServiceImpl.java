@@ -4,7 +4,6 @@ package com.projectoelecroiotjava.projectelectroiot.model.Service;
 import com.projectoelecroiotjava.projectelectroiot.model.Dao.IPacienteDao;
 import com.projectoelecroiotjava.projectelectroiot.model.Entidades.Paciente;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,6 +12,10 @@ import java.util.List;
 
 @Service
 public class PacienteServiceImpl implements IPacienteService {
+
+    public PacienteServiceImpl(IPacienteDao pacienteDao) {
+        this.pacienteDao = pacienteDao;
+    }
 
     @Autowired
     IPacienteDao pacienteDao;
